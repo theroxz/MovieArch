@@ -4,7 +4,7 @@ import {useNavigate,useParams} from 'react-router-dom';
 import serialize from 'form-serialize';
 const MovieEditor = (props) =>{
     let { id } = useParams();
-    const index = props.movies.findIndex(m => m.id == id);
+    const index = props.movies.findIndex(m => m.id.parseInt() === id);
     const movie = props.movies[index];
     let navigate = useNavigate();
     function handleSubmit(event){
