@@ -1,6 +1,6 @@
 # Project MovieArch
 
-This project is developed by using react, tailwind and other packages. It is an app for users to create a movie archive, you can see the running version from here: [projectmoviearch.netlify.app](https://projectmoviearch.netlify.app/) But I want to inform that there isn't any backend for this project. So it doesn't properly run. I recommend you to run this project on your local.
+This project is developed by using react, tailwind and other packages. It is an app for users to create a movie archive.
 
 ## How to Run on Your Local
 
