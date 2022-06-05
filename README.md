@@ -10,7 +10,7 @@ Open the project directory and run these commands:
 
 ### `npx start json-server "./src/api/movies.json" --port 3001`
 
-This is necessary for this project to run in your local.
+This is a MUST for this project to run in your local.
 
 It opens a fake api in your port 3001.
 
