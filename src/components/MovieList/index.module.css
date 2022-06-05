@@ -1,0 +1,72 @@
+img {
+    display : block;
+    max-width: 75%;
+    max-height: 50%;
+    margin:auto;
+    @apply mt-4 rounded;
+}
+.movie__container{
+    max-width: 18rem;
+    background-color:#F8F8FF;
+    @apply relative overflow-hidden border-2 border-gray-200 rounded-lg shadow-lg;
+}
+.movie__container:hover{
+    @apply shadow-gray-400;
+}
+.title_overview__wrapper{
+    @apply mx-auto px-6 pt-2;
+}
+.title{
+    @apply font-bold text-xl mb-2;
+}
+.overview{
+    @apply text text-gray-700 text-base scrollbar;
+}
+.rate__span{
+    background-color: #2F4F4F;
+    @apply text-white font-semibold ml-auto mr-5 mb-3 py-1.5 px-2.5 border border-white justify-end ;
+}
+.buttons__flexrow{
+    @apply absolute w-full bottom-0 justify-between flex flex-row;
+}
+.delete__button{
+    @apply bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white ml-5 mb-3 py-1.5 px-2.5 border border-red-500 hover:border-transparent rounded;
+}
+.edit__button{
+    @apply bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white ml-9 mb-3 py-1.5 px-2.5 border border-blue-500 hover:border-transparent rounded;
+}
+h1 {
+    @apply font-medium leading-tight text-3xl mt-0 mb-2;
+}
+.movielist__container{
+    margin-left: 17%;
+    @apply w-3/4 gap-x-8 gap-y-4 flex flex-wrap;
+}
+.text{
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: auto;
+    scrollbar-width:none;
+    max-height: 11.2em;
+    line-height: 1.6em;
+}
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #2F4F4F;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #2F4F4F;;
+	background-color: #2F4F4F;;
+}

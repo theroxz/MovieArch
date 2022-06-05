@@ -1,0 +1,17 @@
+.container{
+    @apply relative flex flex-row gap-x-10 m-auto w-6/12 mt-8; 
+}
+
+.button__add{
+    background-color: #FFF8DC;
+    @apply font-medium rounded-lg text-sm px-4 py-1.5;
+}
+.button__add:hover{
+    background-color: #FFEBCD;
+}
+.search__sign{
+   @apply flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none;
+}
+.search__sign svg{
+    @apply w-5 h-5 text-gray-500 dark:text-gray-400;
+}

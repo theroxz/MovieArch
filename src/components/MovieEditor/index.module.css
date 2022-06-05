@@ -1,0 +1,25 @@
+.form{
+    @apply mt-44 w-1/2 mx-auto;
+}
+.form__header{
+    @apply indent-1 bg-gray-400 text-gray-900 mt-1 py-2 block w-full text-center border rounded;
+}
+.title_rating__wrapper{
+    @apply flex flex-row gap-x-4 mt-4;
+}
+.title{
+    @apply indent-1 mt-1 py-2 block w-full border rounded;
+}
+.rating{
+    @apply indent-1 mt-1 py-2 block w-full border rounded;
+}
+.text__area{
+    @apply mt-1 indent-1 block pb-4 pt-1  w-full border rounded;
+}
+.img__url{
+    @apply indent-1 mt-1 py-2 block w-full border rounded;
+}
+
+.button__apply{
+    @apply bg-green-600 text-white w-full py-2 mt-2 border rounded;
+}
