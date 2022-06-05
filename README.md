@@ -2,8 +2,7 @@
 
 This project is developed by using react, tailwind and other packages. It is an app for users to
 
-create a movie archive, you can see the running version from here: [https://app.netlify.com/sites/beamish-dieffenbachia-0580e3/overview](https://app.netlify.com/sites/beamish-dieffenbachia-0580e3/overview)
-
+create a movie archive, you can see the running version from here: [projectmoviearch.netlify.app](https://projectmoviearch.netlify.app/)
 
 ## How to Run on Local
 
