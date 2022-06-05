@@ -6,7 +6,7 @@ This project is developed by using react, tailwind and other packages. It is an 
 
 After you clone this repository to your local computer,
 
-in the project directory, run those commands:
+Open the project directory and run these commands:
 
 ### `npx start json-server "./src/api/movies.json" --port 3001`
 
