@@ -12,7 +12,8 @@ Open the project directory and run these commands:
 
 This is necessary for this project to run in your local.
 
-It opens a fake api in your port 3001
+It opens a fake api in your port 3001.
+
 Open [http://localhost:3001/movies](http://localhost:3001/movies) to view it in your browser.
 
 You can see the data on this link after you execute the command.
