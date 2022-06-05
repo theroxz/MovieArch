@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import MovieList from '../MovieList';
 import SearchBar from '../SearchBar';
+import './style.css';
 import axios from 'axios';
 import MovieAdder from '../MovieAdder';
 import MovieEditor from '../MovieEditor';
