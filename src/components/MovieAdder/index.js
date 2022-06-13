@@ -2,12 +2,23 @@ import React from 'react';
 import styles from './index.module.css';
 import serialize from 'form-serialize';
 import {useNavigate} from 'react-router-dom';
-const MovieAdder = (props) =>{
+import { useSelector, useDispatch } from 'react-redux';
+import { setMovies} from '../../features/movieSlice';
+import  axios from 'axios';
+
+
+const MovieAdder = () =>{
     let navigate = useNavigate();
+    const dispatch = useDispatch();
+    const movies = useSelector((state)=>state.movieList.movies);
+    async function addMovie(movie){
+        await axios.post("http://localhost:3002/movies",movie);
+        dispatch(setMovies(movies.concat(movie))); 
+    }
     function handleSubmit(event){
         event.preventDefault();
         const newMovie = serialize(event.target,{hash:true});
-        props.addMovie(newMovie);
+        addMovie(newMovie);
         navigate('/');
     }
     return(

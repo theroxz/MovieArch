@@ -2,21 +2,36 @@ import React from 'react';
 import styles from './index.module.css';
 import {useNavigate,useParams} from 'react-router-dom';
 import serialize from 'form-serialize';
-const MovieEditor = (props) =>{
+import { useSelector, useDispatch } from 'react-redux';
+import {setMovies} from '../../features/movieSlice';
+import axios from 'axios';
+
+const MovieEditor = () =>{
+    const movies = useSelector((state)=>state.movieList.movies);
+    const dispatch = useDispatch();
     let { id } = useParams();
-    const index = props.movies.findIndex(m => m.id === parseInt(id));
-    const movie = props.movies[index];
+    id = parseInt(id);
+    const index = movies.findIndex(m => m.id === id);
+    const movie = movies[index];
     let navigate = useNavigate();
+    
+    async function editMovie(id,index,updatedMovie){
+        await axios.put(`http://localhost:3002/movies/${id}`, updatedMovie);
+        const newMovieList = movies.slice();
+        newMovieList[index] = updatedMovie;
+        dispatch(setMovies(newMovieList));
+    }
+    
     function handleSubmit(event){
         event.preventDefault();
-        const newMovie = serialize(event.target, {hash:true});
-        newMovie.id = id;
-        newMovie.genre_ids = movie.genre_ids;
-        props.editMovie(id,index,newMovie);
+        const updatedMovie = serialize(event.target, {hash:true});
+        updatedMovie.id = id;
+        updatedMovie.genre_ids = movie.genre_ids;
+        editMovie(id,index,updatedMovie);
         navigate('/');
     }
     return(
-        <form id="my-form" name="my-form" className={styles.form} onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={handleSubmit}>
             <span className={styles.form__header}>Edit the form to update your movie.</span>
             <div className= {styles.title_overview__wrapper}>
                 <div className="flex-grow">
