@@ -1,17 +1,19 @@
 import React,{useState}  from 'react';
 import styles from './index.module.css';
-import Popup from '../Popup';
+import Modal from '../Modal';
 import {Link} from "react-router-dom";
+import { useSelector} from 'react-redux';
 const MovieList = (props) =>{
-    const [triggered, setTriggered] = useState(false);
+    const [show, setShow] = useState(false);
     const [activeMovie, setActiveMovie] = useState("");
+    const filteredMovies = useSelector((state)=>state.movieList.filteredMovies);
     function handleDeleteTrigger(movie){
         setActiveMovie(movie);
-        setTriggered(true);
+        setShow(true);
     }
     return (
         <div className={styles.movielist__container}>
-            {props.movies.map((movie,index)=> (
+            {filteredMovies.map((movie,index)=> (
             <div className={styles.movie__container} key={index}>
                 <img src= {movie.poster_path} onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
@@ -39,7 +41,7 @@ const MovieList = (props) =>{
             </div>
             )
         )}
-        {triggered ? <Popup setTriggered={setTriggered} activeMovie={activeMovie} deleteMovie={props.deleteMovie}/>: ""}
+        <Modal show = {show} setShow = {setShow} activeMovie={activeMovie}/>
         </div>
     )
 }

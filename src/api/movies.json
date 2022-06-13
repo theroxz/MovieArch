@@ -21,16 +21,16 @@
       ]
     },
     {
+      "title": "Batman Begins",
+      "vote_average": "7.7",
+      "poster_path": "https://www.themoviedb.org/t/p/w220_and_h330_face/8RW2runSEc34IwKN2D1aPcJd2UL.jpg",
+      "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+      "id": 272,
       "genre_ids": [
         28,
         80,
         18
-      ],
-      "id": 272,
-      "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
-      "poster_path": "https://www.themoviedb.org/t/p/w220_and_h330_face/8RW2runSEc34IwKN2D1aPcJd2UL.jpg",
-      "title": "Batman Begins",
-      "vote_average": 7.7
+      ]
     },
     {
       "title": "Blood Diamond",
@@ -90,15 +90,15 @@
       ]
     },
     {
-      "title": "Forrest Gump",
-      "vote_average": "8.5",
-      "poster_path": "https://www.themoviedb.org/t/p/w220_and_h330_face/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
-      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+      "title": "Se7en",
+      "vote_average": "8.4",
+      "poster_path": "https://www.themoviedb.org/t/p/w220_and_h330_face/69Sns8WoET6CfaYlIkHbla4l7nC.jpg",
+      "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
       "id": 13,
       "genre_ids": [
-        35,
-        18,
-        10749
+        80,
+        9648,
+        53
       ]
     },
     {
@@ -277,25 +277,18 @@
       "id": 228151
     },
     {
-      "title": "saf",
-      "vote_average": "asfsfa",
-      "poster_path": "asf",
-      "overview": "asfasf",
+      "title": "Test for edit - deletee",
+      "vote_average": "5",
+      "poster_path": "delete.img",
+      "overview": "Test the functionality of delete - edit functions here",
       "id": 228152
     },
     {
-      "title": "wqfwqfwww",
-      "vote_average": "wfqwfw",
-      "poster_path": "wqfwqf",
-      "overview": "wqfwqfwqf",
+      "title": "yeni",
+      "vote_average": "11",
+      "poster_path": "ww",
+      "overview": "ww",
       "id": 228153
-    },
-    {
-      "title": "fwfq",
-      "vote_average": "wfqwaf",
-      "poster_path": "asfsa",
-      "overview": "asfasf",
-      "id": 228154
     }
   ]
 }
