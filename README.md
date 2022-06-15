@@ -14,7 +14,7 @@ This is a MUST for this project to run properly in your local.
 
 It opens a fake api in your port 3002.
 
-Open [http://localhost:3001/movies](http://localhost:3001/movies) to view it in your browser.
+Open [http://localhost:3002/movies](http://localhost:3002/movies) to view it in your browser.
 
 You can see the data on this link after executing the command.
 
