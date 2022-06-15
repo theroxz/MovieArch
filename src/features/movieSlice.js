@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const movieSlice = createSlice({
-  name: 'counter',
+  name: 'movieSlice',
   initialState,
   reducers: {
     setMovies: (state, action) => {
