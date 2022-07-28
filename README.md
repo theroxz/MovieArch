@@ -8,7 +8,7 @@ After you clone this repository to your local computer,
 
 Open the project directory and run these commands:
 
-### `npx start json-server "./src/api/movies.json" --port 3002`
+### `npx json-server "./src/api/movies.json" --port 3002`
 
 This is a MUST for this project to run properly in your local.
 
