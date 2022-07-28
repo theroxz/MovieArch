@@ -18,7 +18,7 @@ Open [http://localhost:3002/movies](http://localhost:3002/movies) to view it in 
 
 You can see the data on this link after executing the command.
 
-### `npm start`
+### `npm run start`
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
